@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mariachi's Restaurant</title>
+    </head>
+    <style>
+        h1, h2, h3{
+            color: brown;
+        }
+        #sendbtn{
+            color: aliceblue;
+            background-color: brown;
+            height: 50px;
+            width: 150px;
+        }
+        #sendbtn:hover{
+            background-color: rgb(196, 32, 32);
+        }
+    </style>
+    <body>
+        <header>
+            <figure>
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/005/539/230/small/colorful-hat-mexico-sumbrero-culture-logo-design-icon-symbol-illustration-vector.jpg" alt="Sombrero de Mariachi" id="header-img">
+            </figure>
+            <h1>Mariachi's Restaurant</h1>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#order-form">Ordena Aquí</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="menu">
+                <h2>Menu - Menú</h2>
+                <article>
+                    <figure>
+                        <img width="150px" src="https://demo.clevercloudapp.com/repo/public/receta_de_enchiladas_rojas_de_m%C3%A9xico_blog_aed36e72fae0daf3b22151c42f09648c.webp" alt="Enchiladas Rojas">
+                    </figure>
+                    <h3>Enchiladas Rojas</h3>
+                    <p>Este platillo es uno de los más populares en México y se diversifica en ingredientes <br> 
+                        y procesos según la región en que se prepare. <i>$150 mxn</i></p>
+                </article>
+                <article>
+                    <figure>
+                        <img width="150px" src="https://demo.clevercloudapp.com/repo/public/fd4d189acb20bad8a6f15630f4cf4001.jpg" alt="Gorditas de Horno">
+                    </figure>
+                    <h3>Gorditas de Horno</h3>
+                    <p>Siguiendo al pie de la letra la receta típica es como Evalia Rivera ha cuidado que el sabor característico, <br> 
+                        entre ácido y dulce, de las gorditas de horno de la sierra de Tequila, no se pierda.
+                         <i>$90 mxn</i></p>
+                </article>
+                <article>
+                    <figure>
+                        <img width="150px" src="https://demo.clevercloudapp.com/repo/public/5e8787cad56e0a904c54bf4e098da2de.jpg" alt="Albóndigas de Maíz">
+                    </figure>
+                    <h3>Albóndigas de Maíz</h3>
+                    <p>Desde Michoacán, la cocinera tradicional María Inés Dimas nos comparte la receta de las albóndigas de fiesta y <br>
+                        su importancia en la tradición de Santa Fe de La Laguna, Quiroga. <i>$130 mxn</i></p>
+                </article>
+            </section>
+            <section id="order-form">
+                <h2>Place Your Order - Ordena Aquí</h2>
+                <form action="#">
+                    <label for="enchiladas">Enchiladas Rojas</label> <input type="number" min="0" id="enchiladas"> <br>
+                    <p>Add something else?:</p>
+                    <label><input type="checkbox"> Queso </label>
+                    <label><input type="checkbox"> Onion </label> <br><br><br>
+                    <label for="gorditas">Gorditas de Horno</label> <input type="number" min="0" id="gorditas"> <br><br>
+                    <label for="gorditasrequest">Special Request:</label><textarea name="gorditasreq" id="gorditasrequest" ></textarea> <br><br><br>
+                    <label for="albondigas">Albóndigas de Maíz</label> <input type="number" min="0" id="albondigas"> <br>
+                    <br>
+                    <p>Pick your salsa</p>
+                    <input type="radio" name="salsas" id="salsaroja"> <label for="salsaroja">Salsa Roja</label><br>
+                    <input type="radio" name="salsas" id="salsaverde"> <label for="salsaverde">Salsa Verde</label> <br>
+                    <p>Add something else</p>
+                    <label><input type="checkbox"> Lemon </label>                    
+                    <label><input type="checkbox"> Cilantro </label>                    
+                    <br><br><br>
+                    <input type="submit" value="Go to Checkout" id="sendbtn">
+                    <br><br>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Made with love by Victor Palomeque @VicPalomeque</p>
+        </footer>
+    </body>
+</html>
